@@ -1,0 +1,14 @@
+[Unit]
+Description=my service
+After=network.target
+#StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+ExecStart=@CMAKE_BINARY_DIR@/${name}
+
+[Install]
+WantedBy=multi-user.target
