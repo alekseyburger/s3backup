@@ -1,4 +1,6 @@
 .vscode
+.idea
 *.o
 */build/*
 *.log
+target
